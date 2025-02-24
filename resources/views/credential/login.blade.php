@@ -23,7 +23,7 @@
         <div id="login-section" class="w-full max-w-sm mx-auto space-y-4 mt-10">
             <h2 class="text-3xl font-semibold mb-2 text-gray-800">Sign in to Dashlane</h2>
             <p class="text-gray-600 text-sm mb-4">Enter your email to continue.</p>
-            
+
             <form id="emailForm" class="space-y-4" onsubmit="showPasswordForm(event)">
                 <label for="email" class="text-sm font-medium">Email</label>
                 <input id="email" name="email" type="email" placeholder="Enter your email..." required 
@@ -36,6 +36,10 @@
                 <input id="password" name="password" type="password" placeholder="Enter your password..." required 
                     class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
                 <button type="submit" class="w-full bg-teal-600 text-white py-2 rounded-lg hover:bg-teal-700 transition">Sign in</button>
+                <div class="flex justify-between items-center text-sm text-gray-600 mt-2">
+                    <span>Forgot your password?</span>
+                    <a href="/forgot-password" class="text-teal-600 hover:underline">Reset it here</a>
+                </div>
             </form>
         </div>
     </div>
